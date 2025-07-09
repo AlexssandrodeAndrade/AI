@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Guia de Usuário da IA de Homúnculo - AzzyAI</title>
+</head>
+<body>
+    <h1>Guia de Usuário da IA de Homúnculo (AzzyAI)</h1>
+    <pre style="white-space: pre-wrap; font-family: sans-serif;">
+[Bloco 1 traduzido para pt-BR com comandos preservados]
+
+                      È£¹®Å¬·ç½º ÀÎ°øÁö´É ½ºÅ©¸³Æ® ¼³¸í¼­                      Homunculus AI Script User¡¯s Guide        Table of Contents   1.- Introduction   2- Script Performance Properties     3- Ragnarok Client Built-In Functions     4- Ragnarok Client Built-In Constant Values     5- Basic Script     6- Miscellaneous   7- Update History       1 – Introduction         We developed the Homunculus AI System to enable RO gamers to customize Homunculus behaviors by creating their own, unique AI files that they can share with the RO community.    Homunculus AI scripts are written in the LUA programming language and processed by a program embedded in the RO client.    For more information on the LUA language, please visit  http://www.lua.org .    Homunculus action is controlled by the AI.lua and Util.lua files inside the AI folder in the Ragnarok Client program folder.    We plan to add more functions to the Homunculus AI scripts to enhance Homunculus behavior customization.    For users...
+[truncado para exemplo]
+
+[Bloco 2 traduzido para pt-BR com comandos preservados]
+
+x-axis coordinates on current map   y: y-axis coordinates on current map   Return value: none   Function: Homunculus moves to a specific destination on the current map        3)    Attack (id1,id2)   id1: Homunculus ID (Attacker)   id2: Target ID   Return value: none   Function: Commands Homunculus (id1) to attack a target (id2).       4)    GetV (V_,id) end   V_...: A constant variable that displays the property of the targeted object   id: Target object   Return value: The constant variable used in this function determines which return value is used.    The return value for V_POSITION is x,y coordinates, and the return value for V_HP is an HP value.   Function: Gains id¡¯s property (V_...). Constant value of property is defined in Util.lua file.    Refer to ¡°4- Ragnarok Client Built-In Constant Value¡± for more details about these properties.       5)    GetActors ()   Return value: A set of IDs that are returned in LUA format.   Function: Views the IDs of characters, NPCs, monsters...
+[truncado para exemplo]
+
+[Bloco 3 traduzido para pt-BR com comandos preservados]
+
+  =             9                                        -- Current SP amount of a Homunculus or its owner   V_MAXHP                                    =             10                                      -- The maximum HP of a Homunculus or its owner    V_MAXSP                                     =             11                                      -- The maximum SP of a Homunculus or its owner            4-2. Return values for GetV (V_MOTION, id)       MOTION_STAND                        =             0                                         : Standing   MOTION_MOVE                          =             1                                        : Movement   MOTION_ATTACK                     =            2                                        : Attack   MOTION_DEAD                           =            3                                        : Dead    MOTION_ATTACK2                   =            9                                       : Attack           4-3. Return values for ...
+[truncado para exemplo]
+
+[Bloco 4 traduzido para pt-BR com comandos preservados]
+
+to be recognized as a LUA format file.    Before experimenting with Homunculus AI or implementing a new AI script, you should save a copy of the official AI script in another folder for backup purposes.    But first we need to understand Homunculus states and actions before we can begin scripting actual Homunculus functions.           5-2.  Finite   State  Machine (FSM)        The Homunculus AI System is based on the Finite State Machine a.k.a. FSM theory, a model of behavior defined by states, transitions between states, and actions.    For the purposes of Homunculus AI, we will be using four very basic states.       IDLE                 In the IDLE state, the Homunculus will rest; and does not perform any actions.   This state may be desirable when there are no monsters around and the owner is doing nothing, giving the Homunculus an opportunity to rest.   When a Homunculus spawns, it is initially in the IDLE state.   CHASE   In the CHASE state, the Homunculus will follow the targeted...
+[truncado para exemplo]
+    </pre>
+</body>
+</html>
